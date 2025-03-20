@@ -8,7 +8,6 @@ import { router } from "expo-router";
 import { MaterialIcons } from "@expo/vector-icons";
 import axios from "axios";
 
-// import { styles } from "./styles";
 import { Button } from "@/components/button";
 import { Layout } from "@/components/layout";
 
@@ -33,21 +32,6 @@ export default function Episodeos() {
         console.error("Error fetching episodes: ", error);
       });
   }, []);
-
-//   const styles = StyleSheet.create({
-//     episodeCard: {
-//       marginTop: 20,
-//       marginBottom: 20,
-//     },
-//     episodeTitle: {
-//       fontSize: 18,
-//       fontWeight: "bold",
-//       color: "#fff",
-//       flexWrap: "wrap",
-//       textAlign: "center",
-//       width: "60%",
-//     },
-//   });
 
   return (
     <Layout >
